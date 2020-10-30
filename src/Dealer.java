@@ -23,7 +23,9 @@ public class Dealer {
             hand.getOne();
         }
     }
-
+    public boolean check(){
+        return getValue()<22;
+    }
     public int getValue(){
         return hand.getValue();
     }
