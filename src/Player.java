@@ -67,5 +67,13 @@ public class Player {
         hand.getOne();
     }
 
+    public int select(){
+        System.out.println("您的选择有:");
+        System.out.println("1.双倍");
+        System.out.println("2.叫牌");
+        System.out.println("3.停牌");
 
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
+    }
 }
