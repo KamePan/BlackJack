@@ -21,6 +21,7 @@ public class Dealer {
     public void getCards(){
         while(hand.getValue()<17){
             hand.getOne();
+            show();
         }
     }
     public boolean check(){
@@ -28,5 +29,8 @@ public class Dealer {
     }
     public int getValue(){
         return hand.getValue();
+    }
+
+    public Hand getHand() {
     }
 }

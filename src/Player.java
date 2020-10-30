@@ -65,6 +65,7 @@ public class Player {
 
     public void getOneCard(){
         hand.getOne();
+        show();
     }
 
     public int select(){

@@ -7,7 +7,9 @@ public class Game {
     private Deck deck;
     private Integer win;
     private Integer lose;
+    private Integer draw;
     private Integer netEarnings;
+    private boolean isGameOver = false;
 
     public void init() {
         player = new Player();
@@ -19,7 +21,18 @@ public class Game {
         System.out.println("---------------------------------");
         System.out.println("           Black Jack            ");
         System.out.println("---------------------------------");
-        menu();
+        proceed();
+
+    }
+
+    public void proceed(){
+        while(!isGameOver) {
+            if (player.getBalance() == 0) {
+                player.setBalance(1000);
+                System.out.println("赠送 1000 游戏币，祝游戏愉快 ~");
+            }
+            menu();
+        }
     }
 
     public void menu(){
@@ -27,21 +40,22 @@ public class Game {
         System.out.println("2. 统计数据");
         System.out.println("3. 结束游戏");
         Scanner scanner = new Scanner(System.in);
-        boolean isRunning = true;
-        while(isRunning) {
+        boolean isCircling = true;
+        while(isCircling && !isGameOver) {
             Integer choise = scanner.nextInt();
             switch (choise) {
                 case 1:
-                    isRunning = false;
+                    isCircling = false;
                     new Gamble().start();
                     break;
                 case 2:
                     System.out.println("当前胜场： " + win);
                     System.out.println("当前负场： " + lose);
+                    System.out.println("平局场次： " + draw);
                     System.out.println("净赚金额： " + netEarnings);
                     break;
                 case 3:
-                    isRunning = false;
+                    isGameOver = true;
                     System.out.println("游戏结束....欢迎下次光临");
                     break;
                 default:
