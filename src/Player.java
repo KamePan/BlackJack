@@ -20,13 +20,13 @@ public class Player {
         this.hand = hand;
     }
 
-    public Player(){
+    public Player(Deck deck){
         balance = 1000;
-        hand = new Hand();
+        hand = new Hand(deck);
     }
-    public Player(int balance) {
+    public Player(Deck deck, int balance) {
         this.balance = balance;
-        hand = new Hand();
+        hand = new Hand(deck);
     }
 
     public void show(){
@@ -46,15 +46,16 @@ public class Player {
     }
 
     public int bet(){
-        System.out.println("当前余额为： " + player.getBalance());
+        System.out.println("当前余额为： " + getBalance());
         System.out.println("请输入要投注的金额： ");
         Scanner scanner = new Scanner(System.in);
         Integer bet = scanner.nextInt();
         while (true){
-            if (bet > player.getBalance())
+            if (bet > getBalance())
                 System.out.println("投注金额超过余额，请重新输入");
             else break;
         }
+        scanner.close();
         return bet;
     }
 
@@ -75,6 +76,8 @@ public class Player {
         System.out.println("3.停牌");
 
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+        int option = scanner.nextInt();
+        scanner.close();
+        return option;
     }
 }

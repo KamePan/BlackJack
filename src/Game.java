@@ -11,9 +11,10 @@ public class Game {
     private Integer netEarnings;
     private boolean isGameOver = false;
 
+    // 创建Player的时候传入当前牌堆
     public void init() {
-        player = new Player();
         deck = new Deck();
+        player = new Player(deck);
     }
 
     public void start() {
