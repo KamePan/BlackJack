@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48313a08-318d-4e0e-8440-24ec4a0be688" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gamble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gamble.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,24 +39,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="inlay.hints" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
   </component>
-  <component name="RunManager" selected="Application.Card">
-    <configuration name="Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Card" />
-      <module name="OOAD_21point" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="PlayRoom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PlayRoom" />
       <module name="OOAD_21point" />
@@ -61,10 +58,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Card" />
         <item itemvalue="Application.PlayRoom" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -77,9 +85,6 @@
       <option name="presentableId" value="Default" />
       <updated>1604038027974</updated>
       <workItem from="1604038029539" duration="9392000" />
-      <workItem from="1604209519656" duration="2493000" />
-      <workItem from="1604212895030" duration="1847000" />
-      <workItem from="1604225466646" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="新增 Gamble，Game，PlayRoom 类">
       <created>1604042751262</created>
@@ -99,49 +104,55 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增 Gamble，Game，PlayRoom 类" />
     <option name="LAST_COMMIT_MESSAGE" value="新增 Gamble，Game，PlayRoom 类" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1604040668546">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="718" y="165" key="#com.intellij.ide.util.MemberChooser" timestamp="1604226524209">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604040668546" />
+    <state x="718" y="165" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604226524209" />
     <state x="386" y="17" key="CommitChangelistDialog2" timestamp="1604042815921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="386" y="17" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604042815921" />
-    <state width="1493" height="105" key="GridCell.Tab.0.bottom" timestamp="1604042828294">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="441" key="GridCell.Tab.0.bottom" timestamp="1604229281157">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="105" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604042828294" />
-    <state width="1493" height="105" key="GridCell.Tab.0.center" timestamp="1604042828294">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="441" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604229281157" />
+    <state width="1877" height="441" key="GridCell.Tab.0.center" timestamp="1604229281156">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="105" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604042828294" />
-    <state width="1493" height="105" key="GridCell.Tab.0.left" timestamp="1604042828294">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="441" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604229281156" />
+    <state width="1877" height="441" key="GridCell.Tab.0.left" timestamp="1604229281156">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="105" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604042828294" />
-    <state width="1493" height="105" key="GridCell.Tab.0.right" timestamp="1604042828294">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="441" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604229281156" />
+    <state width="1877" height="441" key="GridCell.Tab.0.right" timestamp="1604229281157">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="105" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604042828294" />
+    <state width="1877" height="441" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604229281157" />
     <state x="147" y="71" key="MergeDialog" timestamp="1604044550170">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -150,6 +161,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="129" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604044552123" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1604227138995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604227138995" />
     <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1604042826176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -158,14 +173,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604046183832" />
-    <state x="651" y="240" width="617" height="626" key="find.popup" timestamp="1604211375399">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="651" y="240" width="617" height="626" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1604211375399" />
-    <state x="719" y="287" width="472" height="538" key="refactoring.ChangeSignatureDialog" timestamp="1604212994429">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="719" y="287" width="472" height="538" key="refactoring.ChangeSignatureDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1604212994429" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604046368188">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -32,7 +32,7 @@ public class Player {
     public void show(){
         System.out.print("该玩家的手牌为");
         for(int i=0;i<hand.getLength();i++){
-            System.out.print((i==0?":":";")+hand.get(i));
+            System.out.print((i==0?": ":", ")+hand.get(i));
         }
         System.out.println();
     }
@@ -46,8 +46,8 @@ public class Player {
     }
 
     public int bet(){
-        System.out.println("当前余额为： " + getBalance());
-        System.out.println("请输入要投注的金额： ");
+        System.out.println("当前余额为: " + getBalance());
+        System.out.println("请输入要投注的金额: ");
         Scanner scanner = new Scanner(System.in);
         Integer bet = scanner.nextInt();
         while (true){
@@ -55,7 +55,6 @@ public class Player {
                 System.out.println("投注金额超过余额，请重新输入");
             else break;
         }
-        scanner.close();
         return bet;
     }
 
@@ -67,17 +66,5 @@ public class Player {
     public void getOneCard(){
         hand.getOne();
         show();
-    }
-
-    public int select(){
-        System.out.println("您的选择有:");
-        System.out.println("1.双倍");
-        System.out.println("2.叫牌");
-        System.out.println("3.停牌");
-
-        Scanner scanner = new Scanner(System.in);
-        int option = scanner.nextInt();
-        scanner.close();
-        return option;
     }
 }

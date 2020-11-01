@@ -33,6 +33,11 @@ public class Card {
             default:
                 displayValue = Integer.toString(this.value);
         }
-        return this.suit + " " + displayValue;
+        String suitStr = "";
+        if(this.suit == suit.SPADE) suitStr += '♠';
+        else if(this.suit == suit.HEART) suitStr += '♥';
+        else if(this.suit == suit.CLUB) suitStr += '♣';
+        else if(this.suit == suit.DIAMOND) suitStr += '♦';
+        return suitStr + " " + displayValue;
     }
 }

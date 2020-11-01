@@ -1,14 +1,19 @@
 public class Dealer {
+
     private Hand hand;
 
+    public Dealer(Deck deck) {
+        this.hand = new Hand(deck);
+    }
+
     public void firstlyShow(){
-        System.out.println("庄家的明牌为" + hand.get(0));
+        System.out.println("庄家的明牌为: " + hand.get(0));
     }
 
     public void show(){
         System.out.print("庄家的手牌为");
         for(int i=0;i<hand.getLength();i++){
-            System.out.print((i==0?":":";")+hand.get(i));
+            System.out.print((i==0?": ":", ")+hand.get(i));
         }
         System.out.println();
     }

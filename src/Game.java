@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Game {
 
     private Player player;
-    private Gamble gamble;
+    private Dealer dealer;
     private Deck deck;
     private Integer win;
     private Integer lose;
@@ -15,6 +15,7 @@ public class Game {
     public void init() {
         deck = new Deck();
         player = new Player(deck);
+        dealer = new Dealer(deck);
     }
 
     public void start() {
@@ -47,13 +48,13 @@ public class Game {
             switch (choise) {
                 case 1:
                     isCircling = false;
-                    new Gamble(player).start();
+                    new Gamble(player,dealer).start();
                     break;
                 case 2:
-                    System.out.println("当前胜场： " + win);
-                    System.out.println("当前负场： " + lose);
-                    System.out.println("平局场次： " + draw);
-                    System.out.println("净赚金额： " + netEarnings);
+                    System.out.println("当前胜场: " + win);
+                    System.out.println("当前负场: " + lose);
+                    System.out.println("平局场次: " + draw);
+                    System.out.println("净赚金额: " + netEarnings);
                     break;
                 case 3:
                     isGameOver = true;
