@@ -47,7 +47,7 @@ public class Game {
             switch (choise) {
                 case 1:
                     isCircling = false;
-                    new Gamble().start();
+                    new Gamble(player).start();
                     break;
                 case 2:
                     System.out.println("当前胜场： " + win);

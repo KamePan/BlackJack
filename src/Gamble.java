@@ -5,7 +5,12 @@ public class Gamble {
     private Player player;
     private Dealer dealer;
     private Integer bet;
-    private Deck deck;
+    //private Deck deck;
+
+    public Gamble(Player player) {
+        this.player = player;
+        this.dealer = new Dealer();
+    }
 
     public void start() {
         bet = player.bet();

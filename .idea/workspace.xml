@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48313a08-318d-4e0e-8440-24ec4a0be688" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gamble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gamble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +79,7 @@
       <workItem from="1604038029539" duration="9392000" />
       <workItem from="1604209519656" duration="2493000" />
       <workItem from="1604212895030" duration="1847000" />
+      <workItem from="1604225466646" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="新增 Gamble，Game，PlayRoom 类">
       <created>1604042751262</created>
