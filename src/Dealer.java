@@ -2,6 +2,10 @@ public class Dealer {
 
     private Hand hand;
 
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
+
     public Dealer(Deck deck) {
         this.hand = new Hand(deck);
     }
@@ -23,10 +27,11 @@ public class Dealer {
         hand.getOne();
     }
 
-    public void getCards(){
+    public void getCards() throws InterruptedException {
         while(hand.getValue()<17){
             hand.getOne();
             show();
+            Thread.sleep(1000);
         }
     }
     public boolean check(){

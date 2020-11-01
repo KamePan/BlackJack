@@ -34,6 +34,9 @@ public class Game {
                 System.out.println("赠送 1000 游戏币，祝游戏愉快 ~");
             }
             menu();
+            /*重置手牌*/
+            player.setHand(new Hand(deck));
+            dealer.setHand(new Hand(deck));
         }
     }
 
@@ -48,7 +51,11 @@ public class Game {
             switch (choise) {
                 case 1:
                     isCircling = false;
-                    new Gamble(player,dealer).start();
+                    try {
+                        new Gamble(player,dealer).start();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case 2:
                     System.out.println("当前胜场: " + win);

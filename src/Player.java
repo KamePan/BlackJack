@@ -24,13 +24,14 @@ public class Player {
         balance = 1000;
         hand = new Hand(deck);
     }
+
     public Player(Deck deck, int balance) {
         this.balance = balance;
         hand = new Hand(deck);
     }
 
     public void show(){
-        System.out.print("该玩家的手牌为");
+        System.out.print("玩家的手牌为");
         for(int i=0;i<hand.getLength();i++){
             System.out.print((i==0?": ":", ")+hand.get(i));
         }
