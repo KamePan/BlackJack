@@ -27,6 +27,7 @@ public class Game {
         while(!isGameOver) {
             if (player.getBalance() == 0) {
                 player.setBalance(1000);
+                player.addFirst_balance(1000);
                 System.out.println("赠送 1000 游戏币，祝游戏愉快 ~");
             }
             menu();

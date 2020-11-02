@@ -4,6 +4,11 @@ public class Player {
     private int balance;
     private Hand hand;
     private int win_num;
+
+    public void addFirst_balance(int external_money) {
+        first_balance += external_money;
+    }
+
     private int lose_num;
     private int draw_num;
     private int first_balance;
