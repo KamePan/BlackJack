@@ -46,13 +46,13 @@ public class Hand {
             }
         }
         for (int i = 0; i < numA.size(); i++) {
-            if (result + 10 <= 21) {
-                result += 10;
+            if (result + 11 <= 21) {
+                result += 11;
             } else if (result + 1 <= 21) {
                 result += 1;
             } else {
                 if (i != 0) {
-                    result = result - 9 + 1;
+                    result = result - 10 + 1;
                 } else {
                     result += 1;
                 }
