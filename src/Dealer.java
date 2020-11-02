@@ -46,9 +46,10 @@ public class Dealer {
     }
 
     public boolean mayBeBlackJack() {
-        hand.
+        return hand.mayBeBlackJack();
     }
 
     public boolean isBlackJack() {
+        return hand.isBlackJack();
     }
 }
