@@ -112,4 +112,16 @@ public class Player {
     public void draw(){
         draw_num++;
     }
+
+    public boolean canDoubleBet(int bet){
+        return balance >= 2*bet;
+    }
+
+    public void loseInsurance(Integer bet) {
+        balance = balance - (int) Math.floor(bet*0.5);
+    }
+
+    public int getHandCardsLength() {
+        return hand.getLength();
+    }
 }

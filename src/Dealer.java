@@ -52,4 +52,8 @@ public class Dealer {
     public boolean isBlackJack() {
         return hand.isBlackJack();
     }
+
+    public int getHandCardsLength() {
+        return hand.getLength();
+    }
 }
