@@ -24,7 +24,7 @@ public class Gamble {
             System.out.println("2.停牌");
             if (player.canDoubleBet(bet)) System.out.println("3.双倍");
             /*如果庄家第一张为 A 且没有保险失败 且玩家的余额足够支付 1/2 bet 的保险金，则显示保险*/
-            if (dealer.mayBeBlackJack()&&!isInsureFail&&player.getBalance() >= Math.floor(bet/2)) {
+            if (dealer.mayBeBlackJack()&&!isInsureFail&&player.getBalance() >= Math.floor(bet*3/2)) {
                 String str = "";
                 if (!player.canDoubleBet(bet)) str += "3.";
                 else str+="4.";
