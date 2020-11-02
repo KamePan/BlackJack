@@ -49,10 +49,9 @@ public class Gamble {
             }
             Thread.sleep(1000);
             if (checkGambleOver()){
-                System.out.println("大于21点，输了......");
-                player.setBalance(player.getBalance()-bet);
+                player.lose(bet);
                 isGambleOver=true;
-                /*负场 + 1*/
+                System.out.println("大于21点，输了......");
             }
         }
         if(!isGambleOver){
@@ -61,21 +60,18 @@ public class Gamble {
             dealer.getCards();
             if (dealer.check()){
                 if(dealer.getValue() < player.getValue()){
+                    player.win(bet);
                     System.out.println("您获胜了!!!!!!!!!!");
-                    player.setBalance(player.getBalance()+bet);
-                    /*胜场 + 1，若 BlackJack 则 BlackJack 场次 + 1 */
                 }else if (dealer.getValue() > player.getValue()){
+                    player.lose(bet);
                     System.out.println("输了......");
-                    player.setBalance(player.getBalance()-bet);
-                    /*负场 + 1*/
                 }else{
+                    player.draw();
                     System.out.println("平局了。");
-                    /*平场 + 1，总金额不变，若 BlackJack 则 BlackJack 场次 + 1*/
                 }
             } else{
+                player.win(bet);
                 System.out.println("您获胜了!!!!!!!!!!");
-                player.setBalance(player.getBalance()+bet);
-                /*胜场 + 1，若 BlackJack 则 BlackJack 场次 + 1 */
             }
         }
         Thread.sleep(1000);

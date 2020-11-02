@@ -3,6 +3,26 @@ import java.util.Scanner;
 public class Player {
     private int balance;
     private Hand hand;
+    private int win_num;
+    private int lose_num;
+    private int draw_num;
+    private int first_balance;
+
+    public int getWin_num() {
+        return win_num;
+    }
+
+    public int getLose_num() {
+        return lose_num;
+    }
+
+    public int getDraw_num() {
+        return draw_num;
+    }
+
+    public int getFirst_balance() {
+        return first_balance;
+    }
 
     public int getBalance() {
         return balance;
@@ -21,12 +41,18 @@ public class Player {
     }
 
     public Player(Deck deck){
-        balance = 1000;
+        first_balance = balance = 1000;
+        win_num = 0;
+        lose_num = 0;
+        draw_num = 0;
         hand = new Hand(deck);
     }
 
     public Player(Deck deck, int balance) {
-        this.balance = balance;
+        first_balance = this.balance = balance;
+        win_num = 0;
+        lose_num = 0;
+        draw_num = 0;
         hand = new Hand(deck);
     }
 
@@ -67,5 +93,18 @@ public class Player {
     public void getOneCard(){
         hand.getOne();
         show();
+    }
+
+    public void win(int bet){
+        balance += bet;
+        win_num++;
+    }
+    public void lose(int bet){
+        balance -= bet;
+        lose_num++;
+    }
+
+    public void draw(){
+        draw_num++;
     }
 }

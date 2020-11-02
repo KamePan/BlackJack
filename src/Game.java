@@ -5,10 +5,6 @@ public class Game {
     private Player player;
     private Dealer dealer;
     private Deck deck;
-    private Integer win;
-    private Integer lose;
-    private Integer draw;
-    private Integer netEarnings;
     private boolean isGameOver = false;
 
     // 创建Player的时候传入当前牌堆
@@ -58,10 +54,10 @@ public class Game {
                     }
                     break;
                 case 2:
-                    System.out.println("当前胜场: " + win);
-                    System.out.println("当前负场: " + lose);
-                    System.out.println("平局场次: " + draw);
-                    System.out.println("净赚金额: " + netEarnings);
+                    System.out.println("当前胜场: " + player.getWin_num());
+                    System.out.println("当前负场: " + player.getLose_num());
+                    System.out.println("平局场次: " + player.getDraw_num());
+                    System.out.println("净赚金额: " + (player.getBalance()-player.getFirst_balance()));
                     break;
                 case 3:
                     isGameOver = true;
