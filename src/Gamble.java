@@ -21,6 +21,7 @@ public class Gamble {
             System.out.println("1.叫牌");
             System.out.println("2.停牌");
             if (player.getBalance() >= 2*bet) System.out.println("3.双倍");
+            if (dealer.mayBeBlackJack()) System.out.println("4.保险");
 
             Scanner scanner = new Scanner(System.in);
             Integer choise = scanner.nextInt();
@@ -42,7 +43,20 @@ public class Gamble {
                     isSkip = true;
                     break;
                 case 4:
-                    ;
+                    if (!dealer.mayBeBlackJack()) {
+                        System.out.println("当前不能选择保险");
+                        break;
+                    }
+                    dealer.show();
+                    if(dealer.isBlackJack()){
+                        System.out.println("保险成功，输了一半的赌注");
+                        player.lose((int) Math.floor(bet*0.5));
+                        isGambleOver =true;
+                        break;
+                    }
+                    System.out.println("保险失败，失去了一半的赌注，请继续游戏");
+                    bet = (int) Math.ceil(bet*0.5);
+                    player.setBalance(player.getBalance()-(int) Math.floor(bet*0.5));
                     break;
                 default:
                     System.out.println("没有这个选项，对不起请重新来过");
@@ -87,6 +101,7 @@ public class Gamble {
         dealer.firstlyGetCards();
         dealer.firstlyShow();
         player.show();
+
     }
 
 }

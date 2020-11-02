@@ -44,4 +44,11 @@ public class Dealer {
     public Hand getHand() {
         return hand;
     }
+
+    public boolean mayBeBlackJack() {
+        hand.
+    }
+
+    public boolean isBlackJack() {
+    }
 }
