@@ -60,4 +60,12 @@ public class Hand {
         }
         return result;
     }
+
+    public boolean isBlackJack() {
+        return getLength() == 2 && getValue() == 21;
+    }
+
+    public boolean mayBeBlackJack() {
+        return cards.get(0).getValue() == 1;
+    }
 }
